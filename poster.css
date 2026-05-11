@@ -1,0 +1,205 @@
+@font-face {
+    font-family: font1;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #4d6921;
+}
+.container{
+    width: 70vmax;
+    position: relative;
+    margin: 0 auto;
+}
+
+.headerInner{
+    font-family: font1;
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vmax;
+}
+.introTtile{
+    font-size: 5vmax;
+    margin-left: -8vmax;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: -30vmax;
+    width: 25vmax;
+    height: 100%;
+    background-color: antiquewhite;
+    padding: 2vmax;
+    transition: left 0.3s ease;
+    outline: none;
+    z-index: 9999;
+}
+.menu.open{
+    left: 0;
+}
+#menuBtn{
+    font-size: 2vmax;
+    position: fixed;
+    top: 2.3vmax;
+    left: 37vmax;
+    z-index: 1000;
+    border: none;
+    cursor: pointer;
+}
+.menu a {
+    display: block;
+    color: #4d6921;
+    text-decoration: none;
+    padding: 1.5vmax;
+    font-family: font1;
+    font-size: 2vmax;
+    transition: 0.2s;
+    position: relative;
+    z-index: 10000;
+    cursor: pointer;
+}
+.menu a :hover{
+    color: #ffcc80;
+    padding-left: 1vmax;
+}
+.headerNumb{
+    font-size: 1.5vmax;
+    margin-top: 2.5vmax;
+}
+.container2{
+    width: 100%;
+    position: relative;
+    margin: 0 auto; 
+    background-color: antiquewhite;
+}
+.container3{
+    width: 100%;
+    position: relative;
+    margin: 0 auto; 
+    background-color: #4d6921;
+}
+.intro1{
+    background-image: url(/images/24.jpg);
+    background-size: 30vmax;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 50vmax;
+    margin-left: 7vmax;
+}
+.intro2{
+    background-image: url(/images/25.jpg);
+    background-size: 30vmax;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: antiquewhite;
+    height: 50vmax;
+    margin-right: 7vmax;
+}
+.intro3{
+    background-image: url(/images/26.jpg);
+    background-size: 30vmax;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 50vmax;
+    margin-left: 7vmax;
+}
+.intro4{
+    background-image: url(/images/27.jpg);
+    background-size: 30vmax;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: antiquewhite;
+    height: 50vmax;
+    margin-right: 7vmax;
+}
+.intro5{
+    background-image: url(/images/28.jpg);
+    background-size: 30vmax;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 50vmax;
+    margin-left: 7vmax;
+    
+}
+.intro1Title{
+    display: flex;
+    position: absolute;
+    font-family: font1;
+    font-size: 2.3vmax;
+    text-transform: uppercase;
+    color: antiquewhite;
+    margin-top: 11vmax;
+    margin-left: 40vmax;
+}
+.intro1SubTitle{
+    display: flex;
+    position: absolute;
+    font-family: font1;
+    font-size: 1.8vmax;
+    color: antiquewhite;
+    margin-top: 21vmax;
+    margin-left: 40vmax;
+}
+.intro1SubTitle1{
+    display: flex;
+    position: absolute;
+    font-family: font1;
+    font-size: 1.8vmax;
+    color: antiquewhite;
+    margin-top: 33vmax;
+    margin-left: 40vmax;
+}
+.intro2Title{
+    display: flex;
+    position: absolute;
+    font-family: font1;
+    font-size: 2.3vmax;
+    text-transform: uppercase;
+    color: #4d6921;
+    margin-top: 10vmax;
+    margin-left: 5vmax;
+}
+.intro2SubTitle{
+    display: flex;
+    position: absolute;
+    font-family: font1;
+    font-size: 1.8vmax;
+    color: #4d6921;
+    margin-top: 20vmax;
+    margin-left: 5vmax;
+}
+.intro2SubTitle1{
+    display: flex;
+    position: absolute;
+    font-family: font1;
+    font-size: 1.8vmax;
+    color: #4d6921;
+    margin-top: 32vmax;
+    margin-left: 5vmax;
+}
+.intro7{
+    height: 15vmax;
+}
+.intro7Title{
+    display: flex;
+    position: absolute;
+    font-family: font1;
+    font-size: 2vmax;
+    color: #4d6921;
+    margin-top: 7vmax;
+    margin-left: 11vmax;
+}
+#poster{
+    display:inline-block;
+    background-color: #4d6921;
+    color: antiquewhite;
+    padding: 1.5vmax 2.5vmax;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 2vmax;
+    transition: 0.3s;
+    margin-left: 68vmax;
+    margin-top: 5.4vmax;
+    
+}

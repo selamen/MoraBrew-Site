@@ -1,0 +1,180 @@
+@font-face {
+    font-family: font1;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #4d6921;
+}
+.container{
+    width: 70vmax;
+    position: relative;
+    margin: 0 auto;
+}
+
+.headerInner{
+    font-family: font1;
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vmax;
+}
+.introTtile{
+    font-size: 5vmax;
+    margin-left: -8vmax;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: -30vmax;
+    width: 25vmax;
+    height: 100%;
+    background-color: antiquewhite;
+    padding: 2vmax;
+    transition: left 0.3s ease;
+    outline: none;
+    z-index: 9999;
+}
+.menu.open{
+    left: 0;
+}
+#menuBtn{
+    font-size: 2vmax;
+    position: fixed;
+    top: 2.3vmax;
+    left: 37vmax;
+    z-index: 1000;
+    border: none;
+    cursor: pointer;
+}
+.menu a {
+    display: block;
+    color: #4d6921;
+    text-decoration: none;
+    padding: 1.5vmax;
+    font-family: font1;
+    font-size: 2vmax;
+    transition: 0.2s;
+    z-index: 10000;
+}
+.menu a :hover{
+    color: antiquewhite;
+    padding-left: 1vmax;
+}
+.headerNumb{
+    font-size: 1.5vmax;
+    margin-top: 2.5vmax;
+}
+.intro1{
+    background-image: url(/images/20.jpg);
+    background-size: 30vmax;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 50vmax;
+    margin-top: -7vmax;
+    margin-right: 5vmax;
+}
+.intro1Title{
+    color: antiquewhite;
+    font-size: 3.5vmax;
+    margin-top: 11vmax;
+    margin-left: 12vmax;
+}
+.name-column{
+    color: antiquewhite;
+    margin-top: -21.5vmax;
+    margin-left: 12vmax;
+    font-weight: bold;
+    font-size: 2vmax;
+}
+.name{
+    margin-bottom: 20px;
+    
+}
+.coffee-sizes {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 2vmax;
+    text-align: center;
+    margin-top: 3vmax;
+    margin-left: -4vmax;
+}
+.size-column {
+    margin: 0;
+    padding: 0;
+}
+.volume {
+    font-weight: bold;
+    font-size: 2vmax;
+    margin-bottom: 20px;
+    color: antiquewhite;
+}
+.price{
+    margin: 5px 1rem;
+    margin-bottom: 20px;
+    font-size: 2vmax;
+    color: antiquewhite;
+}
+.intro2{
+    background-image: url(/images/22.jpg);
+    background-size: 30vmax;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 50vmax;
+    margin-top: 3vmax;
+    margin-left: 8vmax;
+}
+.intro2Title{
+    color: antiquewhite;
+    font-size: 3.5vmax;
+    margin-left: 4vmax;
+}
+.name-column2{
+    color: antiquewhite;
+    margin-top: -21.5vmax;
+    font-weight: bold;
+    font-size: 2vmax;
+    text-align: left;
+    margin-left: 42vmax;
+}
+.coffee-sizes2{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: right;
+    gap: 2vmax;
+    text-align: center;
+    margin-right: 10vmax;
+    margin-top: 7vmax;
+}
+.intro3{
+    background-image: url(/images/23.jpg);
+    background-size: 33vmax;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 50vmax;
+    margin-top: -3vmax;
+    margin-right: 5vmax;
+}
+.itro3Title{
+    color: antiquewhite;
+    font-size: 3.5vmax;
+    margin-left: 13vmax;
+}
+.coffee-sizes3{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 2vmax;
+    text-align: center;
+    margin-top: 6vmax;
+    margin-left: -4vmax;
+}
+.name-column3{
+    color: antiquewhite;
+    margin-top: -14.5vmax;
+    font-weight: bold;
+    font-size: 2vmax;
+    text-align: left;
+    margin-left: 12vmax;
+}

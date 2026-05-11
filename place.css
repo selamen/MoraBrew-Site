@@ -1,0 +1,123 @@
+@font-face {
+    font-family: font1;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #4d6921;
+}
+.container{
+    width: 70vmax;
+    position: relative;
+    margin: 0 auto;
+}
+
+.headerInner{
+    font-family: font1;
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vmax;
+}
+.introTtile{
+    font-size: 5vmax;
+    margin-left: -8vmax;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: -30vmax;
+    width: 25vmax;
+    height: 100%;
+    background-color: antiquewhite;
+    padding: 2vmax;
+    transition: left 0.3s ease;
+    outline: none;
+    z-index: 9999;
+}
+.menu.open{
+    left: 0;
+}
+#menuBtn{
+    font-size: 2vmax;
+    position: fixed;
+    top: 2.3vmax;
+    left: 37vmax;
+    z-index: 1000;
+    border: none;
+    cursor: pointer;
+}
+.menu a {
+    display: block;
+    color: #4d6921;
+    text-decoration: none;
+    padding: 1.5vmax;
+    font-family: font1;
+    font-size: 2vmax;
+    transition: 0.2s;
+    position: relative;
+    z-index: 10000;
+    cursor: pointer;
+}
+.menu a :hover{
+    color: #ffcc80;
+    padding-left: 1vmax;
+}
+.headerNumb{
+    font-size: 1.5vmax;
+    margin-top: 2.5vmax;
+}
+.map{
+    margin-left: 22vmax;
+    margin-top: 2vmax;
+}
+.intro1{
+    background-image: url(/images/31.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30vmax;
+    height: 50vmax;
+    margin-right: 10vmax;
+}
+.intro1Title{
+    display: flex;
+    position: absolute;
+    font-size: 2.5vmax;
+    color: antiquewhite;
+    margin-top: 10vmax;
+    margin-left: 13vmax;
+}
+.inrtoSubTitle{
+    display: flex;
+    position: absolute;
+    font-family: font1;
+    font-size: 1.8vmax;
+    color: antiquewhite;
+    margin-top: 18.5vmax;
+    margin-left: 13vmax;
+}
+.intro2{
+    background-image: url(/images/30Арт.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 32vmax;
+    height: 50vmax;
+    margin-left: 10vmax;
+    margin-top: -4vmax;
+}
+.intro2Title{
+    display: flex;
+    position: absolute;
+    font-size: 2.5vmax;
+    color: antiquewhite;
+    padding-left: 44vmax;
+    margin-top: 11.5vmax;
+}
+.intro2SubTitle{
+    position: absolute;
+    font-family: font1;
+    font-size: 1.8vmax;
+    color: antiquewhite;
+    padding-left: 44vmax;
+    margin-top: 20vmax;
+}
