@@ -72,7 +72,7 @@ body{
     margin-top: 2vmax;
 }
 .intro1{
-    background-image: url(/images/31.jpg);
+    background-image: url(./images/31.jpg);
     background-repeat: no-repeat;
     background-position: right;
     background-size: 30vmax;
@@ -97,7 +97,7 @@ body{
     margin-left: 13vmax;
 }
 .intro2{
-    background-image: url(/images/30Арт.jpg);
+    background-image: url(./images/30Арт.jpg);
     background-repeat: no-repeat;
     background-position: left;
     background-size: 32vmax;
