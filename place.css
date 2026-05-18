@@ -18,6 +18,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 2vmax;
+    position: relative;
 }
 .introTtile{
     font-size: 5vmax;
@@ -40,7 +41,7 @@ body{
 }
 #menuBtn{
     font-size: 2vmax;
-    position: fixed;
+    position: absolute;
     top: 2.3vmax;
     left: 37vmax;
     z-index: 1000;
