@@ -1,204 +1,148 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Меню — MORA BREW</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="menu.css">
-    <style>
-        /* Базовые переключения */
-        @media (min-width: 769px) {
-            .mobile-only { display: none; }
-            .desktop-only { display: block; }
-        }
-        @media (max-width: 768px) {
-            .desktop-only { display: none; }
-            .mobile-only { display: block; }
-
-            /* Шапка и бургер */
-           .headerInner {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    gap: 5px;
-    padding: 0 10px;
-    margin-bottom: 5vmax;
-}
-.introTtile {
-    font-size: 1.5rem !important;
-    white-space: nowrap;
-    margin-left: 0 !important;
-}
-.headerNumb {
-    font-size: 1rem !important;
-    white-space: nowrap;
-    margin-top: 0 !important;
-    text-align: right;
-}
-#menuBtn {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    width: 36px;
-    height: 36px;
-    flex-shrink: 0;
-}
-
-            /* Блоки меню */
-            .mobile-menu-section {
-                margin: 0 10px 30px 10px;
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-            }
-            .mobile-menu-title {
-                font-size: 1.8rem;
-                text-align: center;
-                margin: 20px 0 10px;
-                color: antiquewhite;
-                background: rgba(0,0,0,0.4);
-                padding: 6px;
-                border-radius: 20px;
-            }
-            .mobile-price-table {
-                width: 100%;
-                min-width: 500px;
-                border-collapse: collapse;
-                background: antiquewhite;
-                border-radius: 12px;
-                font-size: 0.8rem;
-            }
-            .mobile-price-table th,
-            .mobile-price-table td {
-                border: 1px solid #4d6921;
-                padding: 8px 6px;
-                text-align: center;
-                white-space: nowrap;
-            }
-            .mobile-price-table th {
-                background: #3b5219;
-                color: antiquewhite;
-            }
-            .mobile-price-table tr td:first-child {
-                background: #e0d5c0;
-                font-weight: bold;
-                text-align: left;
-            }
-        }
-        
-      
-    </style>
 </head>
 <body>
     <svg id="menuBtn" width="94" height="71" viewBox="0 0 94 71" xmlns="http://www.w3.org/2000/svg">
-        <line x1="24" y1="21" x2="70" y2="21" stroke="antiquewhite" stroke-width="2"/>
-        <line x1="24" y1="35" x2="70" y2="35" stroke="antiquewhite" stroke-width="2"/>
-        <line x1="24" y1="49" x2="70" y2="49" stroke="antiquewhite" stroke-width="2"/>
-    </svg>
-    <nav class="menu" id="menu"> 
-        <a href="index.html">Главная</a>
-        <a href="menu.html">Меню</a>
-        <a href="place.html">Наши кофейни</a>
-        <a href="poster.html">Мероприятия</a>
-    </nav>
-
+                <line x1="24" y1="21" x2="70" y2="21" stroke="antiquewhite" stroke-width="2"/>
+                <line x1="24" y1="35" x2="70" y2="35" stroke="antiquewhite" stroke-width="2"/>
+                <line x1="24" y1="49" x2="70" y2="49" stroke="antiquewhite" stroke-width="2"/>
+                </svg>
+                <nav class="menu" id="menu"> 
+                        <a href="index.html">Главная</a>
+                        <a href="menu.html">Меню</a>
+                        <a href="place.html">Наши кофейни</a>
+                        <a href="poster.html">Мероприятия</a>
+                </nav>
     <header>
         <div class="container">
             <div class="headerInner">
                 <div class="introTtile">MORA BREW</div>
-                <div class="headerNumb">8 (906) 582-16 45</div>
+                
+             <div class="headerNumb">
+                8 (906) 582-16 45
+            </div>
             </div>
         </div>
-    </header>
-
-    <!-- ДЕСКТОПНАЯ ВЕРСИЯ -->
-    <div class="desktop-only">
+        </header>
         <div class="intro1">
-            <div class="intro1Title">КОФЕ</div>
+            <div class="intro1Title"> КОФЕ</div>
+        
             <div class="coffee-sizes">
-                <div class="size-column"><div class="volume">200 мл</div><div class="price">---</div><div class="price">200 ₽</div><div class="price">210 ₽</div><div class="price">230 ₽</div><div class="price">---</div><div class="price">230 ₽</div></div>
-                <div class="size-column"><div class="volume">300 мл</div><div class="price">---</div><div class="price">230 ₽</div><div class="price">240 ₽</div><div class="price">---</div><div class="price">220 ₽</div><div class="price">260 ₽</div></div>
-                <div class="size-column"><div class="volume">400 мл</div><div class="price">---</div><div class="price">260 ₽</div><div class="price">270 ₽</div><div class="price">---</div><div class="price">260 ₽</div><div class="price">290 ₽</div></div>
-            </div>
-            <div class="name-column">
-                <div class="name">Эспрессо</div><div class="name">Фильтр-кофе</div><div class="name">Капучино</div><div class="name">Флэт</div><div class="name">Латте</div><div class="name">Раф</div>
-            </div>
-        </div>
-        <div class="intro2">
-            <div class="intro2Title">ХОЛОДНЫЙ КОФЕ</div>
-            <div class="coffee-sizes2">
-                <div class="size-column"><div class="volume">200 мл</div><div class="price">---</div><div class="price">---</div><div class="price">---</div><div class="price">---</div><div class="price">---</div><div class="price">---</div></div>
-                <div class="size-column"><div class="volume">300 мл</div><div class="price">290 ₽</div><div class="price">320 ₽</div><div class="price">250 ₽</div><div class="price">320 ₽</div><div class="price">550 ₽</div><div class="price">290 ₽</div></div>
-                <div class="size-column"><div class="volume">400 мл</div><div class="price">---</div><div class="price">---</div><div class="price">---</div><div class="price">---</div><div class="price">---</div><div class="price">---</div></div>
-            </div>
-            <div class="name-column2">
-                <div class="name">Айс латте</div><div class="name">Айс какао</div><div class="name">Айс маття</div><div class="name">Бамбл</div><div class="name">Бамбл на фреше</div><div class="name">Эспрессо-тоник</div>
-            </div>
-        </div>
-        <div class="intro3">
-            <div class="itro3Title">НЕ КОФЕ</div>
-            <div class="coffee-sizes3">
-                <div class="size-column"><div class="volume">200 мл</div><div class="price">---</div><div class="price">---</div><div class="price">---</div><div class="price">---</div></div>
-                <div class="size-column"><div class="volume">300 мл</div><div class="price">230 ₽</div><div class="price">250 ₽</div><div class="price">320 ₽</div><div class="price">360 ₽</div></div>
-                <div class="size-column"><div class="volume">400 мл</div><div class="price">---</div><div class="price">---</div><div class="price">---</div><div class="price">---</div></div>
-            </div>
-            <div class="name-column3">
-                <div class="name">Чай "Нитка"</div><div class="name">Маття</div><div class="name">Какао Unicava</div><div class="name">Фреш апельсиновый</div>
-            </div>
-        </div>
+    <div class="size-column">
+        <div class="volume">200 мл</div>
+        <div class="price">---</div>
+        <div class="price">200 ₽</div>
+        <div class="price">210 ₽</div>
+        <div class="price">230 ₽</div>
+        <div class="price">--- </div>
+        <div class="price">230 ₽</div>
     </div>
-
-    <!-- МОБИЛЬНАЯ ВЕРСИЯ -->
-    <div class="mobile-only">
-        <div class="mobile-menu-section">
-            <div class="mobile-menu-title">КОФЕ</div>
-           
-            <table class="mobile-price-table">
-                <thead><tr><th>Напиток</th><th>200 мл</th><th>300 мл</th><th>400 мл</th></tr></thead>
-                <tbody>
-                    <tr><td style="text-align:left">Эспрессо</td><td>—</td><td>—</td><td>—</td></tr>
-                    <tr><td style="text-align:left">Фильтр-кофе</td><td>200 ₽</td><td>230 ₽</td><td>260 ₽</td></tr>
-                    <tr><td style="text-align:left">Капучино</td><td>210 ₽</td><td>240 ₽</td><td>270 ₽</td></tr>
-                    <tr><td style="text-align:left">Флэт</td><td>230 ₽</td><td>—</td><td>—</td></tr>
-                    <tr><td style="text-align:left">Латте</td><td>—</td><td>220 ₽</td><td>260 ₽</td></tr>
-                    <tr><td style="text-align:left">Раф</td><td>230 ₽</td><td>260 ₽</td><td>290 ₽</td></tr>
-                </tbody>
-            </table>
-        </div>
-         <img src="images/20.jpg" alt="" width="100%" height="600vmax">
-        <div class="mobile-menu-section">
-            <div class="mobile-menu-title">ХОЛОДНЫЙ КОФЕ</div>
-            
-            <table class="mobile-price-table">
-                <thead><tr><th>Напиток</th><th>200 мл</th><th>300 мл</th><th>400 мл</th></tr></thead>
-                <tbody>
-                    <tr><td style="text-align:left">Айс латте</td><td>—</td><td>290 ₽</td><td>—</td></tr>
-                    <tr><td style="text-align:left">Айс какао</td><td>—</td><td>320 ₽</td><td>—</td></tr>
-                    <tr><td style="text-align:left">Айс маття</td><td>—</td><td>250 ₽</td><td>—</td></tr>
-                    <tr><td style="text-align:left">Бамбл</td><td>—</td><td>320 ₽</td><td>—</td></tr>
-                    <tr><td style="text-align:left">Бамбл на фреше</td><td>—</td><td>550 ₽</td><td>—</td></tr>
-                    <tr><td style="text-align:left">Эспрессо-тоник</td><td>—</td><td>290 ₽</td><td>—</td></tr>
-                </tbody>
-            </table>
-        </div>
-        <img src="images/21.jpg" alt="" width="100%" height="600vmax">
-        <div class="mobile-menu-section">
-            <div class="mobile-menu-title">НЕ КОФЕ</div>
-             
-            <table class="mobile-price-table">
-                <thead><tr><th>Напиток</th><th>200 мл</th><th>300 мл</th><th>400 мл</th></tr></thead>
-                <tbody>
-                    <tr><td style="text-align:left">Чай "Нитка"</td><td>—</td><td>230 ₽</td><td>—</td></tr>
-                    <tr><td style="text-align:left">Маття</td><td>—</td><td>250 ₽</td><td>—</td></tr>
-                    <tr><td style="text-align:left">Какао Unicava</td><td>—</td><td>320 ₽</td><td>—</td></tr>
-                    <tr><td style="text-align:left">Фреш апельсиновый</td><td>—</td><td>360 ₽</td><td>—</td></tr>
-                </tbody>
-            </table>
-        </div>
-        <img src="images/22.jpg" alt="" width="100%" height="600vmax">
+    <div class="size-column">
+        <div class="volume">300 мл</div>
+        <div class="price">---</div>
+        <div class="price">230 ₽</div>
+        <div class="price">240 ₽</div>
+        <div class="price">--- </div>
+        <div class="price">220 ₽</div>
+        <div class="price">260 ₽</div>
     </div>
-
-    <button id="scrollToTopBtn" aria-label="Прокрутить страницу вверх"></button>
-    <script src="menu.js"></script>
-</body>
+    <div class="size-column">
+        <div class="volume">400 мл</div>
+        <div class="price">---</div>
+        <div class="price">260 ₽</div>
+        <div class="price">270 ₽</div>
+        <div class="price">--- </div>
+        <div class="price">260 ₽</div>
+        <div class="price">290 ₽</div>
+    </div>
+</div>
+      <div class="name-column">
+        <div class="name">Эспрессо</div>
+        <div class="name">Фильтр-кофе</div>
+        <div class="name">Капучино</div>
+        <div class="name">Флэт</div>
+        <div class="name">Латте</div>
+        <div class="name">Раф</div>
+    </div>
+        </div>
+    <div class="intro2">
+        <div class="intro2Title">ХОЛОДНЫЙ КОФЕ</div>
+        <div class="coffee-sizes2">
+        <div class="size-column">
+            <div class="volume">200 мл</div>
+            <div class="price">---</div>
+            <div class="price">---</div>
+            <div class="price">---</div>
+            <div class="price">---</div>
+            <div class="price">---</div>
+            <div class="price">---</div>
+        </div>
+        <div class="size-column">
+            <div class="volume">300 мл</div>
+            <div class="price">290 ₽</div>
+            <div class="price">320 ₽</div>
+            <div class="price">250 ₽</div>
+            <div class="price">320 ₽</div>
+            <div class="price">550 ₽</div>
+            <div class="price">290 ₽</div>
+        </div>
+        <div class="size-column">
+            <div class="volume">400 мл</div>
+            <div class="price">---</div>
+            <div class="price">---</div>
+            <div class="price">---</div>
+            <div class="price">--- </div>
+            <div class="price">---</div>
+            <div class="price">---</div>
+        </div>
+        </div>
+        <div class="name-column2">
+            <div class="name">Aйс латте</div>
+            <div class="name">Айс какао</div>
+            <div class="name">Айс маття</div>
+            <div class="name">Бамбл</div>
+            <div class="name">Бамбл на фреше</div>
+            <div class="name">Эспрессо-тоник</div>
+    </div>
+    </div>
+<div class="intro3">
+    <div class="itro3Title">НЕ КОФЕ</div>
+        <div class="coffee-sizes3">
+        <div class="size-column">
+            <div class="volume">200 мл</div>
+            <div class="price">---</div>
+            <div class="price">---</div>
+            <div class="price">---</div>
+            <div class="price">---</div>
+        </div>
+        <div class="size-column">
+            <div class="volume">300 мл</div>
+            <div class="price">230 ₽</div>
+            <div class="price">250 ₽</div>
+            <div class="price">320 ₽</div>
+            <div class="price">360 ₽</div>
+        </div>
+        <div class="size-column">
+            <div class="volume">400 мл</div>
+            <div class="price">---</div>
+            <div class="price">---</div>
+            <div class="price">---</div>
+            <div class="price">--- </div>
+        </div>
+        </div>
+        <div class="name-column3">
+            <div class="name">Чай "Нитка"</div>
+            <div class="name">Маття</div>
+            <div class="name">Какао Unicava</div>
+            <div class="name">Фреш апельсиновый</div>
+    </div>
+</div>
+        <script src="menu.js"></script>
+        </body>
 </html>
+    

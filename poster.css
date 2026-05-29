@@ -92,10 +92,10 @@ body{
     background-image: url(./images/25.jpg);
     background-size: 30vmax;
     background-repeat: no-repeat;
-    background-position: 93%;
+    background-position: right;
     background-color: antiquewhite;
-    height: 50vmax; 
-    margin-right: 0vmax;
+    height: 50vmax;
+    margin-right: 7vmax;
 }
 .intro3{
     background-image: url(./images/26.jpg);
@@ -109,11 +109,10 @@ body{
     background-image: url(./images/27.jpg);
     background-size: 30vmax;
     background-repeat: no-repeat;
-    background-position: 93%;
+    background-position: right;
     background-color: antiquewhite;
     height: 50vmax;
-    margin-right: 0vmax;
-    
+    margin-right: 7vmax;
 }
 .intro5{
     background-image: url(./images/28.jpg);
@@ -122,6 +121,7 @@ body{
     background-position: left;
     height: 50vmax;
     margin-left: 7vmax;
+    
 }
 .intro1Title{
     display: flex;
@@ -179,7 +179,6 @@ body{
     margin-top: 32vmax;
     margin-left: 5vmax;
 }
-/* Оригинальные стили intro7 (десктоп) – будут переопределены ниже */
 .intro7{
     height: 15vmax;
 }
@@ -193,7 +192,7 @@ body{
     margin-left: 11vmax;
 }
 #poster{
-    display: inline-block;
+    display:inline-block;
     background-color: #4d6921;
     color: antiquewhite;
     padding: 1.5vmax 2.5vmax;
@@ -203,114 +202,5 @@ body{
     transition: 0.3s;
     margin-left: 68vmax;
     margin-top: 5.4vmax;
-}
-
-
-/* === ДЕСКТОПНЫЙ БЛОК intro7 – исправленное наложение === */
-@media (min-width: 769px) {
-    .intro7 {
-        display: flex !important;
-        flex-direction: row !important;
-        justify-content: space-between !important;
-        align-items: center !important;
-        background-color: antiquewhite !important;
-        padding: 2rem 10% !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-        flex-wrap: nowrap !important;
-        height: auto !important;
-        margin: 0 !important;
-    }
-    .intro7Title {
-        position: static !important;
-        flex: 1 !important;
-        font-size: 1.8rem !important;
-        color: #4d6921 !important;
-        margin: 0 !important;
-        white-space: nowrap !important;
-        background: none !important;
-        display: block !important;
-    }
-    #poster {
-        flex-shrink: 0 !important;
-        margin: 0 !important;
-        margin-left: 2rem !important;
-        background-color: #4d6921 !important;
-        color: antiquewhite !important;
-        padding: 0.8rem 2rem !important;
-        border-radius: 50px !important;
-        text-decoration: none !important;
-        font-size: 1.8rem !important;
-        white-space: nowrap !important;
-    }
-   #poster:hover{
-    background-color: rgb(8, 167, 8) !important;
-}
-}
-
-/* Кнопка прокрутки наверх (без изменений) */
-#scrollToTopBtn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 56px;
-    height: 56px;
-    border: none;
-    border-radius: 50%;
-    background-color: green;
-    color: white;
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-    transition: opacity 0.3s ease, transform 0.2s ease;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 9999;
-}
-#scrollToTopBtn:hover {
-    background-color: rgb(17, 223, 17);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-}
-#scrollToTopBtn.show {
-    opacity: 1;
-    visibility: visible;
-}
-#scrollToTopBtn::before {
-    content: "↑";
-    line-height: 1;
-    font-weight: bold;
-}
-/* Базовое отображение блоков */
-.desktop-only { display: block; }
-.mobile-only { display: none; }
-
-/* Убедимся, что блок intro7 на десктопе не сломан */
-@media (min-width: 769px) {
-    .intro7 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: antiquewhite;
-        padding: 2rem 10%;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .intro7Title {
-        font-size: 1.8rem;
-        color: #4d6921;
-        margin: 0;
-    }
-    #poster {
-        background-color: #4d6921;
-        color: antiquewhite;
-        padding: 0.8rem 2rem;
-        border-radius: 50px;
-        text-decoration: none;
-        font-size: 1.2rem;
-        margin: 0;
-    }
+    
 }

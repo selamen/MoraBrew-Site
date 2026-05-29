@@ -52,32 +52,3 @@ myMap.geoObjects.add(myGeoObject1);
 }
 
         45.0445, 41.9697
-
-// Получаем кнопку
-const scrollBtn = document.getElementById('scrollToTopBtn');
-
-// Функция проверки прокрутки: показывать кнопку, когда прокручено более 300px
-function toggleButtonVisibility() {
-    if (window.scrollY > 300) {
-        scrollBtn.classList.add('show');
-    } else {
-        scrollBtn.classList.remove('show');
-    }
-}
-
-// Плавная прокрутка к началу страницы
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}
-
-// Вешаем обработчики
-window.addEventListener('scroll', toggleButtonVisibility);
-scrollBtn.addEventListener('click', scrollToTop);
-
-// Первоначальная проверка (если страница загружена не с самого верха)
-toggleButtonVisibility();
-
-
