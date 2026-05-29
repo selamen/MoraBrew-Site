@@ -122,3 +122,79 @@ body{
     padding-left: 44vmax;
     margin-top: 20vmax;
 }
+
+#map{
+    padding-bottom: 10vmax;
+}
+
+/* Кнопка прокрутки наверх */
+#scrollToTopBtn {
+    position: fixed;              /* фиксированное положение относительно окна */
+    bottom: 30px;                 /* отступ от нижнего края */
+    right: 30px;                  /* правый угол */
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;           /* идеальный круг */
+    background-color: green;    /* цвет кнопки (можно изменить) */
+    color: white;
+    font-size: 40px;              /* размер стрелки */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: opacity 0.3s ease, transform 0.2s ease;
+    opacity: 0;                   /* скрыта по умолчанию, появляется при прокрутке */
+    visibility: hidden;
+    z-index: 9999;                /* поверх всех элементов */
+}
+
+/* Эффект при наведении */
+#scrollToTopBtn:hover {
+    background-color: rgb(17, 223, 17);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Когда кнопка становится видимой */
+#scrollToTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Стрелка внутри  */
+#scrollToTopBtn::before {
+    content: "↑";                 /* символ стрелки вверх */
+    line-height: 1;
+    font-weight: bold;
+}
+
+
+@media (min-width: 769px) {
+    .inrtoSubTitle, .intro2SubTitle {
+        max-width: 40vmax;        
+        white-space: normal;
+        word-wrap: break-word;
+    }
+}
+
+/* Показываем десктопные блоки, скрываем мобильные (по умолчанию для всех экранов) */
+.desktop-only { display: block; }
+.mobile-only { display: none; }
+
+/* Карта: общие стили для всех устройств */
+#map {
+    width: 60vmax;
+    height: 30vmax;
+    margin: 2rem auto;
+}
+
+/* Адаптация для мобильных (перебивается в mobile.css, но оставим запас) */
+@media (max-width: 768px) {
+    #map {
+        width: 100% !important;
+        height: 300px !important;
+        margin: 20px 0 !important;
+    }
+}

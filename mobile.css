@@ -1,0 +1,268 @@
+/* =======================================================
+   mobile.css - только для экранов до 768px
+   ======================================================= */
+@media only screen and (max-width: 768px) {
+
+    .desktop-only {
+        display: none !important;
+    }
+    .mobile-only {
+        display: block !important;
+    }
+
+    /* Общие стили */
+    .mobile-img, .mobile-event-img, .mobile-place-img {
+        display: block;
+        width: 95% !important;
+        max-width: 400px;
+        height: auto;
+        margin: 0 auto 10px auto;
+        border-radius: 16px;
+    }
+    .mobile-title {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin: 12px 16px 4px 16px;
+        color: antiquewhite;
+        text-align: center;
+    }
+    .mobile-subtitle, .mobile-desc, .mobile-text, .mobile-place-desc {
+        font-size: 1rem;
+        line-height: 1.4;
+        margin: 0 16px 12px 16px;
+        color: antiquewhite;
+        text-align: center;
+    }
+    .mobile-place-title {
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin: 12px 16px 4px 16px;
+        color: antiquewhite;
+        text-align: center;
+    }
+    .mobile-block, .mobile-only, .mobile-title, .mobile-subtitle,
+    .mobile-desc, .mobile-text, .mobile-only *,
+    .mobile-place-block, .mobile-menu-section {
+        background: none !important;
+        background-color: transparent !important;
+    }
+
+    /* ----- Карта (на странице кофеен) ----- */
+    #map {
+        width: 100% !important;
+        height: 300px !important;
+        margin: 20px 0 !important;
+    }
+
+    /* ----- Главная страница ----- */
+    body.index-page .container {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    body.index-page .mobile-block {
+        margin-bottom: 20px;
+    }
+    body.index-page .mobile-reservation {
+        display: inline-block;
+        background-color: #4d6921;
+        color: antiquewhite;
+        padding: 12px 24px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 1.1rem;
+        margin: 8px auto 20px;
+    }
+
+    /* ----- Страница "Наши кофейни" ----- */
+    body.place-page .container {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    body.place-page .mobile-place-block {
+        margin-bottom: 30px;
+    }
+
+    /* ----- Страница мероприятий ----- */
+    body.poster-page .container {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    body.poster-page .intro1, body.poster-page .intro2, body.poster-page .intro3,
+    body.poster-page .intro4, body.poster-page .intro5 {
+        margin: 0 0 30px 0 !important;
+        background: none !important;
+    }
+    body.poster-page .mobile-title, body.poster-page .mobile-desc, body.poster-page .mobile-date {
+        padding-left: 16px;
+        padding-right: 16px;
+        text-align: center;
+    }
+    body.poster-page .mobile-date {
+        font-weight: bold;
+        margin-top: 8px;
+    }
+    body.poster-page #poster {
+        display: block;
+        width: fit-content;
+        margin: 10px auto 30px auto;
+        background-color: #4d6921;
+        color: antiquewhite;
+        padding: 12px 24px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    /* ----- Страница меню (таблицы с прокруткой) ----- */
+    body.menu-page .container {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .mobile-menu-section {
+        margin-bottom: 30px;
+    }
+    .mobile-menu-title {
+        font-size: 2rem;
+        text-align: center;
+        margin: 20px 0 10px;
+        color: antiquewhite;
+        background: rgba(0,0,0,0.4);
+        padding: 8px;
+        border-radius: 20px;
+    }
+    .mobile-price-table {
+        width: 100%;
+        min-width: 480px;
+        border-collapse: collapse;
+        background: antiquewhite;
+        border-radius: 12px;
+        display: block;
+        overflow-x: auto;
+    }
+    .mobile-price-table th, .mobile-price-table td {
+        border: 1px solid #4d6921;
+        padding: 8px 6px;
+        text-align: center;
+        font-size: 0.8rem;
+        color: #4d6921;
+        white-space: nowrap;
+    }
+    .mobile-price-table th {
+        background: #3b5219;
+        color: antiquewhite;
+    }
+    .mobile-price-table tr td:first-child {
+        font-weight: bold;
+        background: #e0d5c0;
+    }
+
+    /* Шапка на мобильных: номер телефона не обрезается */
+.headerInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 5px;
+    padding: 0 10px;
+    margin-bottom: 5vmax;
+}
+.introTtile {
+    font-size: 1.5rem !important;
+    white-space: nowrap;
+    margin-left: 0 !important;
+}
+.headerNumb {
+    font-size: 0.75rem !important;
+    white-space: nowrap;
+    margin-top: 0 !important;
+    text-align: right;
+}
+#menuBtn {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+/* Блок бронирования на главной — как на десктопе (белый фон, текст слева, кнопка справа) */
+body.index-page .mobile-block:last-child {
+    background-color: antiquewhite !important;
+    margin: 0 !important;
+    padding: 1rem 5% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+}
+body.index-page .mobile-block:last-child .mobile-title {
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    color: #4d6921 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    text-align: left !important;
+}
+body.index-page .mobile-reservation {
+    margin: 0 !important;
+    background-color: #4d6921 !important;
+    color: antiquewhite !important;
+    padding: 8px 16px !important;
+    border-radius: 50px !important;
+    font-size: 1rem !important;
+    white-space: nowrap !important;
+    display: inline-block;
+}
+
+/* Блок "Выбери свой формат" на мобильных – как на десктопе */
+body.poster-page .mobile-only .intro7 {
+    background-color: antiquewhite !important;
+    margin: 0 !important;
+    padding: 1rem 5% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: left !important;
+}
+body.poster-page .mobile-only .intro7 .mobile-title {
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    color: #4d6921 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    text-align: left !important;
+}
+body.poster-page .mobile-only .intro7 #poster {
+    margin: 0 !important;
+    background-color: #4d6921 !important;
+    color: antiquewhite !important;
+    padding: 8px 16px !important;
+    border-radius: 50px !important;
+    font-size: 1rem !important;
+    white-space: nowrap !important;
+    display: inline-block;
+}
+/* Для очень узких экранов (до 480px) можно перестраивать в колонку */
+@media (max-width: 480px) {
+    body.poster-page .mobile-only .intro7 {
+        flex-direction: column;
+        text-align: center;
+    }
+    body.poster-page .mobile-only .intro7 .mobile-title {
+        margin-bottom: 10px !important;
+        text-align: center !important;
+    }
+}
+}
